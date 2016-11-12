@@ -50,8 +50,4 @@ module.exports.policies = {
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
 
-  HashController: {
-    create : 'sessionAuth'
-  }
-
 };
