@@ -33,7 +33,9 @@ function readBlob(id, callback) {
 $(document).ready(function(){
   document.querySelector('#verifydiv').addEventListener('click', function(evt) {
     if (evt.target.tagName.toLowerCase() == 'button') {
-      readBlob('#verifydiv', checkCertificate);
+		$('#verifysuccess').addClass("hidden");
+		$('#verifyfail').addClass("hidden");
+		readBlob('#verifydiv', checkCertificate);
     } 
   }, false);
 
