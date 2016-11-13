@@ -151,11 +151,27 @@ Valid Permanent University Certificates
         <h4>Upload a File to Certify on the Blockchain</h4>
         <input type="file" id="files_certify" name="file" class="col-xs-6">
 		<!--small> Read bytes: </small--> 
-			<span class="readBytesButtons">
+		<span class="readBytesButtons">
 			<button id="generatehash" class="btn btn-lg btn-primary">Issue Original Certificate</button>
-			</span>
+		</span>
         <div class="byte_range"></div><p></p>
+		<p></p>
+		<div class="resultbox col-xs-10">
+				
+		<div id="certifysuccess" class="hidden greenEdge">	
+			<span class="col-xs-3 green glyphicon glyphicon-lock largefont" aria-hidden="true"></span>
+				<div class="resultText">Document has been certified</div>
+			</div>
+				
+			<div id="certifyfail" class="hidden redEdge">
+				<div class="col-xs-3">
+				<span class="red glyphicon glyphicon-remove-circle largefont" aria-hidden="true"></span>
+				</div>
+					<div class="resultText">Unable to certify - The certificate is not unique<small>[?]</small> </div>
+			</div>
+		</div>
 		<!--This is where the result is displayed-->
+		<p></p>		
         <div class="hashiresult" id="byte_content"></div>
 		<p></p>
       </div>
@@ -164,33 +180,31 @@ Valid Permanent University Certificates
         <h2>Verify</h2>
         <h4>Upload a File to Verify its Authenticity</h4>
 	
-        <input type="file" id="files_verify" name="file" class="col-xs-6">
-		<!--small> Read bytes: </small-->
-			<span class="readBytesButtons">
+        <input type="file" id="files_verify" name="file" class="col-xs-6">	 
+		<span class="readBytesButtons">
 			<button id="checkhash" class="btn btn-lg btn-primary">Check Authenticity</button>			
-			</span>
+		</span>
         <div class="byte_range"></div><p></p>
-		<p>
-        </p><div class="hashiresult" id="byte_content2"></div>
 		<p></p>
-		
+		<!--small> Read bytes: </small-->
 		<div class="resultbox col-xs-10">
 			
-			
-	<div id="verifysuccess" class="hidden greenEdge">	
+			<div id="verifysuccess" class="hidden greenEdge">	
 				<span class="col-xs-3 green glyphicon glyphicon-ok-circle largefont" aria-hidden="true"></span>
-			<div class="resultText">This Document is Authentic
+				<div class="resultText">This Document is Authentic</div>
 			</div>
-		</div>
-			
-		<div id="verifyfail" class="hidden redEdge">
-			<div class="col-xs-3">
-			<span class="red glyphicon glyphicon-remove-circle largefont" aria-hidden="true"></span>
-			</div>
+				
+			<div id="verifyfail" class="hidden redEdge">
+				<div class="col-xs-3">
+					<span class="red glyphicon glyphicon-remove-circle largefont" aria-hidden="true"></span>
+				</div>
 				<div class="resultText">Unable to verify Authenticity - Please check with the issuer. <small>[?]</small> </div>
+			</div>
 		</div>
-	</div>
-	 
+		<p></p>
+		<div class="hashiresult" id="byte_content2"></div>
+		<p></p>
+		
     </div>
 	</div>
 	</div>

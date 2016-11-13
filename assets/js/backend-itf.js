@@ -1,9 +1,9 @@
 function issueCertificate( hash ) {
     $.post( './hash', { 'hash' : hash }, function( data )  {
-        console.log( data );
+        $('#certifysuccess').removeClass("hidden")
     })
         .fail( function( response ) {
-            alert('Error: ' + response.responseText);
+			$('#certifyfail').removeClass("hidden")
         })
 }
 

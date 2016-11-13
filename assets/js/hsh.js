@@ -40,6 +40,8 @@ $(document).ready(function(){
 
   document.querySelector('#certifydiv').addEventListener('click', function(evt) {
     if (evt.target.tagName.toLowerCase() == 'button') {
+      $('#certifysuccess').addClass("hidden");
+  		$('#certifyfail').addClass("hidden");
       readBlob('#certifydiv', "Hash correctly computed: ", issueCertificate);
     }
   }, false);

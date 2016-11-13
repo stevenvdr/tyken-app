@@ -39,9 +39,10 @@
  .hashiresult {
      padding: 20px;
 	 margin-left: 40px;
+	 margin-top: 150px;
  }
  #byte_content {
-     margin: 5px 0;
+     /*margin: 5px 0;*/
      max-height: 100px;
      overflow-y: auto;
      overflow-x: hidden;
