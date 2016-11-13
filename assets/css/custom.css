@@ -22,6 +22,7 @@
     padding: 30;
     padding-bottom: 55;
     width: 100%;
+    min-height: 150px;
  }
  
  .redEdge{
@@ -32,6 +33,7 @@
     padding: 30;
     padding-bottom: 55;
     width: 100%;
+    min-height: 150px;
  }
  
  .hashiresult {

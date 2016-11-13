@@ -1,5 +1,5 @@
 
-function readBlob(id, callback) {
+function readBlob(id, msg, callback) {
 
   var files = $(id + ' input')[0].files;
   if (!files.length) {
@@ -16,12 +16,11 @@ function readBlob(id, callback) {
   // If we use onloadend, we need to check the readyState.
   reader.onloadend = function (evt) {
       if (evt.target.readyState == FileReader.DONE) { 
-        $(id + ' .hashiresult')[0].textContent = evt.target.result;
         $(id + ' .byte_range')[0].textContent = 
             ['Read bytes: ', start + 1, ' - ', stop + 1,
               ' of ', file.size, ' byte file'].join('');
         var hash = Sha256.hash(evt.target.result,'string');        
-        $(id + ' .hashiresult')[0].textContent = hash;
+        $(id + ' .hashiresult')[0].textContent = msg + hash;
         callback(hash);
       }
     };
@@ -30,18 +29,18 @@ function readBlob(id, callback) {
   reader.readAsBinaryString(blob);
 }
 
-$(document).ready(function(){
+$(document).ready(function(){  
   document.querySelector('#verifydiv').addEventListener('click', function(evt) {
     if (evt.target.tagName.toLowerCase() == 'button') {
 		$('#verifysuccess').addClass("hidden");
 		$('#verifyfail').addClass("hidden");
-		readBlob('#verifydiv', checkCertificate);
+		readBlob('#verifydiv', "Hash correctly computed: ", checkCertificate);
     } 
   }, false);
 
   document.querySelector('#certifydiv').addEventListener('click', function(evt) {
     if (evt.target.tagName.toLowerCase() == 'button') {
-      readBlob('#certifydiv', issueCertificate);
+      readBlob('#certifydiv', "Hash correctly computed: ", issueCertificate);
     }
   }, false);
 });
