@@ -1,61 +1,218 @@
 <html>
+<head>
+    <meta charset="utf-8">
+    <title>Block Certificate</title>
+    <meta name="description" content="BlockCertificate.co">
 
-  <head>
-    <title> BlockCertificate.co Test Environment </title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/jquery.min.js"></script>
-	<link href="css/custom.css" rel="stylesheet">
+    <!--meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0"-->
+	<!--test Env links-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+	
+	<script src="js/jquery.min.js"></script>
+<!--	
+    <script src="js/SHA-256.js" type="text/javascript">></script>
+	<script src="js/tabs.js" type="text/javascript">></script>-->
 	<link rel="stylesheet" href="css/dragdrop.css">
+	
+	<!--splash links-->
+    <!-- Loading Bootstrap -->
+    <!--<link href="beta/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- Loading Flat UI -->
+    <link href="css/fui.css" rel="stylesheet" --="">
+    <link href="css/betalaunch.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+	<!--<script src="js/confirmSubmit.js"></script>-->
+	<link href="css/custom.css" rel="stylesheet">
+
+	
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/vendor/html5shiv.js"></script>
+      <script src="dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
   </head>
-  
-  <body>
-    <div class="container">
+
+<body>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<section id="headerhero">
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="title-container">
+            <div class="headline">
+
+                	<h1>BlockCertificate.co</h1>
+<h5>
+Valid Permanent University Certificates
+<br>Through Blockchain Technology
+</h5>
+
+            </div>
+            <div class="description">
+                <div class="inner">
+				<div class="hidden">
+				<iframe name="frameconfirm" id="hidden_iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfIr7PTskB81VKvmta6lpyQFjGltV4S6C0K6pJPo5WiD2tCXg/formResponse" style="display:none;"></iframe>
+				</div>
+				Get exclusive updates on our project:  
+				<form action="https://docs.google.com/forms/d/e/1FAIpQLSfIr7PTskB81VKvmta6lpyQFjGltV4S6C0K6pJPo5WiD2tCXg/formResponse" style="padding-top:10px;" target="frameconfirm" method="POST">
+			<div class="form-group">
+			<!--script type="text/javascript" src="https://form.jotformeu.com/jsform/61925005710346"><--/script>-->
+			<div class="col-xs-3"></div>
+			<div id="thankyouemail" class="col-xs-12" style="display:none">
+			<center>Thank you! We'll keep you posted!</center>
+			</div>
+			<div class="col-xs-12">
+			<div id="emailform">
+			<center>
+		<input type="text" name="entry.990725519" id="Email" placeholder="E-Mail Address" class="form-control" style="max-width: 300px">
+			</center>
+			
+			<center>
+			<input id="submitbutton" type="submit" name="submit" value="Subscribe" class="btn btn-md btn-primary" style="margin-top:10px">
+						<p>
+			<small>Your email will not be abused and will not be shared with any 3rd party.</small>
+			</p>
+			
+			<a href="#features" class="sidetabs btn btn-info">Features</a>
+			
+			<a href="#concept" class="sidetabs btn btn-info">Concept</a>
+			
+			
+			</center>
+			</div>
+			</div>
+
+			</div>
+			</form>
+					
+			<div class="row twitterlink">
+				<a href="http://twitter.com/tyknnl">
+				<span class="fui-twitter"></span></a><br>
+			</div>
+				
+				</div>
+            </div>
+        </div>
+        <div class="filter hidden-xs"></div>
+        <video autoplay loop class="fillWidth hidden-xs">
+            <source src="fonts/vd/MP4/Love-Coding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			<source src="fonts/vd/WEBM/Love-Coding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			</video>
+        <div class="poster hidden">
+            <img src="" alt="">
+        </div>
+    </div>
+</div>
+</section>
+<!-- end intro page -->
+<!--start features section-->
+<section id="features">
+<center>
+	<div class="container">
+	<div class="row">
+	<h1> Features </h1>
+		
+		<div class="col-xs-4">
+		<span class="largefont fui fui-time"></span>
+		<h1>Fast</h1>
+		Instant Real-time Verifications.  Automatically computed 24/7</div>
+		
+		<div class="col-xs-4">
+		<span class="largefont fui fui-lock"></span>
+		<h1>Secure</h1>
+		Encrypted with SHA-256 </div>
+		
+		<div class="col-xs-4">
+		<span class="largefont fui fui-list"></span>
+		<h1>Trusted</h1>
+		Permanently embedded in the blockchain<small>View</small></div>
+	</div>
+	
+	</div>
+	</center>
+</section>
+<!--end features section-->
+<!--start testing env code-->
+<section id="concept">
+<div class="container">
     <div class="col-xs-12">
-      <div class="jumbotron">
-        <center>
-          <h2>Team Dev Testing Zone</h2>
-        </center>
-      </div>
-      <hr>
-	  <div class="col-xs-2 tabscol">
-	  <a href="#" id="certify" class="btn btn-lg btn-success sidetabs">Certify</button>
-	  <a href="#" id="verify" class="btn btn-lg btn-success sidetabs">Verify</a>
-	  </div>
-      <div class="rightcol" class="col-xs-10">
+	<center><h1>Concept</h1></center>
+	  <div class="col-sm-2 tabscol">
+	  <button id="certify" class="btn btn-lg btn-success sidetabs">Certify</button>
+	  <button id="verify" class="btn btn-lg btn-success sidetabs">Verify
+	  </button></div>
+	  
+      <div class="rightcol col-sm-10">
 		<div id="certifydiv">
         <h2>Certify</h2>
-        <h3>Upload a File to Certify on the Blockchain</h3>
-
-        <input type="file" id="files_certify" name="file" />
-		<small> Read bytes: </small> 
+        <h4>Upload a File to Certify on the Blockchain</h4>
+        <input type="file" id="files_certify" name="file" class="col-xs-6">
+		<!--small> Read bytes: </small--> 
 			<span class="readBytesButtons">
-			<button class="btn btn-lg btn-primary col-xs-offset-2">Generate Hash</button>
+			<button id="generatehash" class="btn btn-lg btn-primary">Generate Hash</button>
 			</span>
-        <div class="byte_range"></div>
-		<p><!--This is where the result is displayed-->
+        <div id="byte_range"></div><p></p>
+		<!--This is where the result is displayed-->
         <div class="hashiresult" id="byte_content"></div>
-		</p>
+		<p></p>
       </div>
 	
-
 	  <div id="verifydiv" class="hidden">
         <h2>Verify</h2>
-        <h3>Upload a File to Certify on the Blockchain</h3>
+        <h4>Upload a File to Verify its Authenticity</h4>
 	
-        <input type="file" id="files_verify" name="file" />
-		<small> Read bytes: </small>
+        <input type="file" id="files_verify" name="file" class="col-xs-6">
+		<!--small> Read bytes: </small-->
 			<span class="readBytesButtons">
-			<button id="button1" class="btn btn-lg btn-primary col-xs-offset-2">Generate Hash</button>			
+			<button id="checkhash" class="btn btn-lg btn-primary">Check Hash</button>			
 			</span>
-        <div class="byte_range"></div>
+        <div id="byte_range"></div><p></p>
 		<p>
-        <div class="hashiresult" id="byte_content2"></div>
-		</p>
-      </div>
-	 <div id="verifysuccess"> </div>
-	 <div id="verifyfail"> </div>
+        </p><div class="hashiresult" id="byte_content2"></div>
+		<p></p>
+		
+		<div class="resultbox col-xs-10">
+			
+			
+	<div id="verifysuccess" class="hidden greenEdge">	
+				<span class="col-xs-3 green glyphicon glyphicon-ok-circle largefont" aria-hidden="true"></span>
+			<div class="resultText">This Document is Authentic
+			</div>
+		</div>
+			
+		<div id="verifyfail" class="hidden redEdge">
+			<div class="col-xs-3">
+			<span class="red glyphicon glyphicon-remove-circle largefont" aria-hidden="true"></span>
+			</div>
+				<div class="resultText">Unable to verify Authenticity - Please check with the issuer. <small>[?]</small> </div>
+		</div>
+	</div>
+	 
     </div>
+	</div>
+	</div>
 	</div><!--ending of container-->
-  </body>
-  
-</html>
+    
+
+</section>
+
+<!--end testing env code-->
+<script src="js/hsh.js" type="text/javascript"></script>
+<!--script src="beta/js/betala.js"></script-->
+<script src="js/modernizr.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82431669-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body></html>

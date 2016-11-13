@@ -1,11 +1,42 @@
  body {
-     padding-top: 70px;
-     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
      
-     padding-bottom: 70px;
+
  }
+ 
+
+ .resultText {
+	 font-size: 1.5em;
+	 min-height: 100Tpx;
+	 
+ }
+ 
+ .largefont {
+	 font-size: 5em;
+ }
+ 
+ .greenEdge{
+ border: 2px solid #73AD21;
+ border-radius: 15px 50px 30px;
+ background-color: rgba(0, 179, 0, 0.11);
+    margin: 10;
+    padding: 30;
+    padding-bottom: 55;
+    width: 100%;
+ }
+ 
+ .redEdge{
+ border: 2px solid red;
+ border-radius: 15px 50px 30px;
+ background-color: rgba(204,0,0,0.11);
+    margin: 10;
+    padding: 30;
+    padding-bottom: 55;
+    width: 100%;
+ }
+ 
  .hashiresult {
      padding: 20px;
+	 margin-left: 40px;
  }
  #byte_content {
      margin: 5px 0;
@@ -24,14 +55,35 @@
 }
  
 .sidetabs{
-	width: 100%;
-	margin-bottom: 8px;
-	font-size: 18px;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 18px;
     line-height: 1.3333333;
-    border-radius: 6px;
+    border-radius: 2px;
+    background-color: #1abc9c;
  }
  
  p {
-	 padding: 15px;
+	 padding: 2px;
  }
  
+ .green {
+    color: #00b300;
+}
+
+.red { color: #cc0000 ;}
+ 	
+.resultVerified {
+	border: 2px solid #73AD21;
+}
+
+.resultUnverified {
+	border: 2px solid red;
+}
+ 
+ .resultbox {
+	display: inline-block;
+    height: 105px; 
+	min-width: 105px; 
+
+ }
