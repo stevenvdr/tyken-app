@@ -1,0 +1,53 @@
+#holder { border: 5px dashed #ccc; width: 100%; min-height: 300px; margin: 20px auto;}
+#holder.hover { border: 5px dashed #0c0; }
+#holder img { display: block; margin: 10px auto; }
+#holder p { margin: 15px; font-size: 20px; }
+progress { width: 100%; }
+progress:after { content: '%'; }
+.fail { background: #c00; padding: 2px; color: #fff; }
+.hidden { display: none !important;}
+
+
+
+.red { color: #cc0000 ;}
+.green { color: #00b300 ;}
+
+
+
+
+.team-member img {
+    margin: 0 auto;
+    border: 3px solid #fff;
+	width: 200px;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+.text-muted {
+    color: #777;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#result {
+	display: inline-block;
+	border-radius: 300px;
+    border: 2px solid;
+	opacity: 20%;
+    padding: 20px;
+	padding-top: 18px;
+    height: 105px; 
+	min-width: 105px;
+	}
+	
+.resultVerified {
+	border: 2px solid #73AD21;
+}
+
+.resultUnverified {
+	border: 2px solid red;
+}

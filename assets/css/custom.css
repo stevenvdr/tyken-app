@@ -1,0 +1,37 @@
+ body {
+     padding-top: 70px;
+     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+     
+     padding-bottom: 70px;
+ }
+ .hashiresult {
+     padding: 20px;
+ }
+ #byte_content {
+     margin: 5px 0;
+     max-height: 100px;
+     overflow-y: auto;
+     overflow-x: hidden;
+ }
+ #byte_range {
+     margin-top: 5px;
+	 font-size: 0.8em;
+ }
+ 
+.tabscol{
+	padding-top: 20px;
+	margin-top:20px;
+}
+ 
+.sidetabs{
+	width: 100%;
+	margin-bottom: 8px;
+	font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+ }
+ 
+ p {
+	 padding: 15px;
+ }
+ 

@@ -1,66 +1,63 @@
 <html>
 
-<head>
+  <head>
     <title> BlockCertificate.co Test Environment </title>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
     <script src="js/SHA-256.js" type="text/javascript">></script>
-    
-
-    <!-- Custom CSS -->
-    <style>
-        body {
-            padding-top: 70px;
-            /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-			
-			padding-bottom: 70px;
-        }
-    </style>
-
-</head>
-
-<body>
-    <div class="container">
-
-                <div class="col-xs-12">
-
-<div class="jumbotron"><center> <h2>Team Dev Testing Zone</h2> </center></div>
-
-<hr>
-
-
-<div class="col-xs-12">
-<section>
-<h2>Test 3</h2>
-
-
-<style>
-  .hashiresult {
-  padding: 20px;
+	<script src="js/tabs.js" type="text/javascript">></script>
+	<link href="css/custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/dragdrop.css">
+  </head>
   
-  }
+  <body>
+    <div class="container">
+    <div class="col-xs-12">
+      <div class="jumbotron">
+        <center>
+          <h2>Team Dev Testing Zone</h2>
+        </center>
+      </div>
+      <hr>
+	  <div class="col-xs-2 tabscol">
+	  <a href="#" id="certify" class="btn btn-lg btn-success sidetabs">Certify</button>
+	  <a href="#" id="verify" class="btn btn-lg btn-success sidetabs">Verify</a>
+	  </div>
+      <div class="rightcol" class="col-xs-10">
+		<div id="certifydiv">
+        <h2>Certify</h2>
+        <h3>Upload a File to Certify on the Blockchain</h3>
 
-  #byte_content {
-    margin: 5px 0;
-    max-height: 100px;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  #byte_range { margin-top: 5px; }
-</style>
+        <input type="file" id="files_certify" name="file" />
+		<small> Read bytes: </small> 
+			<span class="readBytesButtons">
+			<button class="btn btn-lg btn-primary col-xs-offset-2">Generate Hash</button>
+			</span>
+        <div class="byte_range"></div>
+		<p><!--This is where the result is displayed-->
+        <div class="hashiresult" id="byte_content"></div>
+		</p>
+      </div>
+	
 
-<input type="file" id="files" name="file" /> Read bytes: 
-<span class="readBytesButtons">
-  <button class="btn btn-primary">Hash Entire File</button>
-</span>
-<div id="byte_range"></div>
-<div class="hashiresult" id="byte_content"></div>
-
-
-</div>
-
-</div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript">></script>
-    <script src="js/hsh.js" type="text/javascript">></script>
-
-</body></html>
+	  <div id="verifydiv" class="hidden">
+        <h2>Verify</h2>
+        <h3>Upload a File to Certify on the Blockchain</h3>
+	
+        <input type="file" id="files_verify" name="file" />
+		<small> Read bytes: </small>
+			<span class="readBytesButtons">
+			<button id="button1" class="btn btn-lg btn-primary col-xs-offset-2">Generate Hash</button>			
+			</span>
+        <div class="byte_range"></div>
+		<p>
+        <div class="hashiresult" id="byte_content2"></div>
+		</p>
+      </div>
+	 <div id="verifysuccess"> </div>
+	 <div id="verifyfail"> </div>
+    </div>
+	</div><!--ending of container-->
+  </body>
+  
+</html>
