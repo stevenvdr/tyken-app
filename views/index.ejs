@@ -76,11 +76,6 @@ Valid Permanent University Certificates
 			<small>Your email will not be abused and will not be shared with any 3rd party.</small>
 			</p>
 			
-			<a href="#features" class="sidetabs btn btn-info">Features</a>
-			
-			<a href="#concept" class="sidetabs btn btn-info">Concept</a>
-			
-			
 			</center>
 			</div>
 			</div>
@@ -115,17 +110,17 @@ Valid Permanent University Certificates
 	<div class="row">
 	<h1> Features </h1>
 		
-		<div class="col-xs-4">
+		<div class="col-sm-4">
 		<span class="largefont fui fui-time"></span>
 		<h1>Fast</h1>
 		Instant Real-time Verifications.  Automatically computed 24/7</div>
-		
-		<div class="col-xs-4">
+
+		<div class="col-sm-4">
 		<span class="largefont fui fui-lock"></span>
 		<h1>Secure</h1>
 		Encrypted with SHA-256 </div>
 		
-		<div class="col-xs-4">
+		<div class="col-sm-4">
 		<span class="largefont fui fui-list"></span>
 		<h1>Trusted</h1>
 		Permanently embedded in the blockchain<small>View</small></div>
@@ -137,80 +132,6 @@ Valid Permanent University Certificates
 <!--end features section-->
 <!--start testing env code-->
 <section id="concept">
-<div class="container">
-    <div class="col-xs-12">
-	<center><h1>Concept</h1></center>
-	  <div class="col-sm-2 tabscol">
-	  <button id="certify" class="btn btn-lg btn-success sidetabs">Certify</button>
-	  <button id="verify" class="btn btn-lg btn-success sidetabs">Verify
-	  </button></div>
-	  
-      <div class="rightcol col-sm-10">
-		<div id="certifydiv">
-        <h2>Certify</h2>
-        <h4>Upload a File to Certify on the Blockchain</h4>
-        <input type="file" id="files_certify" name="file" class="col-xs-6">
-		<!--small> Read bytes: </small--> 
-		<span class="readBytesButtons">
-			<button id="generatehash" class="btn btn-lg btn-primary">Issue Original Certificate</button>
-		</span>
-        <div class="byte_range"></div><p></p>
-		<p></p>
-		<div class="resultbox col-xs-10">
-				
-		<div id="certifysuccess" class="hidden greenEdge">	
-			<span class="col-xs-3 green glyphicon glyphicon-lock largefont" aria-hidden="true"></span>
-				<div class="resultText">Document has been certified</div>
-			</div>
-				
-			<div id="certifyfail" class="hidden redEdge">
-				<div class="col-xs-3">
-				<span class="red glyphicon glyphicon-remove-circle largefont" aria-hidden="true"></span>
-				</div>
-					<div class="resultText">Unable to certify - The certificate is not unique<small>[?]</small> </div>
-			</div>
-		</div>
-		<!--This is where the result is displayed-->
-		<p></p>		
-        <div class="hashiresult" id="byte_content"></div>
-		<p></p>
-      </div>
-	
-	  <div id="verifydiv" class="hidden">
-        <h2>Verify</h2>
-        <h4>Upload a File to Verify its Authenticity</h4>
-	
-        <input type="file" id="files_verify" name="file" class="col-xs-6">	 
-		<span class="readBytesButtons">
-			<button id="checkhash" class="btn btn-lg btn-primary">Check Authenticity</button>			
-		</span>
-        <div class="byte_range"></div><p></p>
-		<p></p>
-		<!--small> Read bytes: </small-->
-		<div class="resultbox col-xs-10">
-			
-			<div id="verifysuccess" class="hidden greenEdge">	
-				<span class="col-xs-3 green glyphicon glyphicon-ok-circle largefont" aria-hidden="true"></span>
-				<div class="resultText">This Document is Authentic</div>
-			</div>
-				
-			<div id="verifyfail" class="hidden redEdge">
-				<div class="col-xs-3">
-					<span class="red glyphicon glyphicon-remove-circle largefont" aria-hidden="true"></span>
-				</div>
-				<div class="resultText">Unable to verify Authenticity - Please check with the issuer. <small>[?]</small> </div>
-			</div>
-		</div>
-		<p></p>
-		<div class="hashiresult" id="byte_content2"></div>
-		<p></p>
-		
-    </div>
-	</div>
-	</div>
-	</div><!--ending of container-->
-    
-
 </section>
 
 <!--end testing env code-->
